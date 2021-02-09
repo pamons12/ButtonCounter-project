@@ -21,6 +21,25 @@ public class MainActivity extends AppCompatActivity {
 
         currentCountTextView = (TextView) findViewById(R.id.currentCountID);
 
+        countButton = (Button) findViewById(R.id.countButton);
+        clearButton = (Button) findViewById(R.id.clearButton);
+
+        countButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentCount+=1;
+                currentCountTextView.setText(String.valueOf(currentCount));
+            }
+        });
+
+        clearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentCount=0;
+                currentCountTextView.setText(String.valueOf(currentCount));
+            }
+        });
+
         if (savedInstanceState != null){
             currentCount = savedInstanceState.getInt("savedCount");
             currentCountTextView.setText(String.valueOf(currentCount));
@@ -35,13 +54,4 @@ public class MainActivity extends AppCompatActivity {
         saveState.putInt("savedCount",currentCount);
     }
 
-    public void countClicked(View view) {
-        currentCount+=1;
-        currentCountTextView.setText(String.valueOf(currentCount));
-    }
-
-    public void clearClicked(View view) {
-        currentCount=0;
-        currentCountTextView.setText(String.valueOf(currentCount));
-    }
 }

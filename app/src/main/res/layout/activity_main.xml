@@ -23,14 +23,12 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_marginRight="10dp"
-                android:text="@string/countLabel"
-                android:onClick="countClicked"/>
+                android:text="@string/countLabel"/>
             <Button
                 android:id="@+id/clearButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/clearLabel"
-                android:onClick="clearClicked"/>
+                android:text="@string/clearLabel"/>
         </TableRow>
     </TableLayout>
 </LinearLayout>
