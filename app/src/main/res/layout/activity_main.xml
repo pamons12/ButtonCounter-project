@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:text="0"
+        android:text="@string/startingValueLabel"
         android:textSize="30sp"/>
 
     <TableLayout
@@ -23,13 +23,13 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_marginRight="10dp"
-                android:text="Count"
+                android:text="@string/countLabel"
                 android:onClick="countClicked"/>
             <Button
                 android:id="@+id/clearButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Clear"
+                android:text="@string/clearLabel"
                 android:onClick="clearClicked"/>
         </TableRow>
     </TableLayout>
