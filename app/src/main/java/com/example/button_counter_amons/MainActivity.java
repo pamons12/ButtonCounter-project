@@ -27,16 +27,14 @@ public class MainActivity extends AppCompatActivity {
         countButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                currentCount+=1;
-                currentCountTextView.setText(String.valueOf(currentCount));
+                incrementCount();
             }
         });
 
         clearButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                currentCount=0;
-                currentCountTextView.setText(String.valueOf(currentCount));
+                clearCount();
             }
         });
 
@@ -46,6 +44,14 @@ public class MainActivity extends AppCompatActivity {
         }else{
             currentCount=0;
         }
+    }
+    private void incrementCount(){
+        currentCount+=1;
+        currentCountTextView.setText(String.valueOf(currentCount));
+    }
+    private void clearCount(){
+        currentCount=0;
+        currentCountTextView.setText(String.valueOf(currentCount));
     }
 
     @Override
