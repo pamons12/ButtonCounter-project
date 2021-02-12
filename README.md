@@ -26,6 +26,6 @@ Create an app that has three buttons, one for incrementing a counter, one for de
  ***Note:*** Any issues you have with either the GitHub steps or Java/Android questions should be asked publically on Slack. If you have a question, chances are someone else does also. If you see someone has posted a question on Slack and you know the answer, please chime in and answer.
  
  ### Additions/Wow Factors
-1.Added Russian language support
+1. Added Russian language support
 <br/>2. Changed button colors
 <br/>3. Changed app header color
