@@ -27,5 +27,5 @@ Create an app that has three buttons, one for incrementing a counter, one for de
  
  ### Additions/Wow Factors
 1.Added Russian language support
-2. Changed button colors
-3. Changed app header color
+<br/>2. Changed button colors
+<br/>3. Changed app header color
